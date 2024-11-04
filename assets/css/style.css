@@ -1439,6 +1439,7 @@ hr {
 }
 .section-padding {
   margin-top:20px;
+  margin-bottom:20px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -1613,7 +1614,7 @@ hr {
   padding-top: 0px;
 }
 .section-tittle {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 
@@ -3176,6 +3177,7 @@ hr {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 .class-offer-area .properties__footer .class-day p {
   color: #263b5c;
@@ -3451,76 +3453,13 @@ hr {
   line-height: 1.5;
   font-family: "Rubik", sans-serif;
 }
-.gallery-carousel-5 button.slick-arrow {
-  position: absolute;
-  padding: 0;
-  z-index: 2;
-  cursor: pointer;
-  top: 27%;
-  left: -330px;
-  border: 1px solid #d6d6d6;
-  color: #d6d6d6;
-  background: #fff;
-  width: 65px;
-  height: 65px;
-  line-height: 65px;
-  border-radius: 0;
-  -webkit-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  -ms-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .gallery-carousel-5 button.slick-arrow {
-    left: -65px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .gallery-carousel-5 button.slick-arrow {
-    left: 0;
-    top: -18%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .gallery-carousel-5 button.slick-arrow {
-    left: 0;
-    top: -22%;
-  }
-}
-.gallery-carousel-5 button.slick-arrow:hover {
-  color: #fff;
-  border: 1px solid #f15b43;
-  background: #f15b43;
-}
-.gallery-carousel-5 button.slick-next {
-  left: calc(100%);
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .gallery-carousel-5 button.slick-next {
-    left: calc(100%);
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .gallery-carousel-5 button.slick-next {
-    left: 75px;
-    top: -18%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .gallery-carousel-5 button.slick-next {
-    left: 75px;
-    top: -22%;
-  }
-}
-
 .gallery-carousel-4 button.slick-arrow {
   position: absolute;
   padding: 0;
   z-index: 2;
   cursor: pointer;
   top: 27%;
-  left: -330px;
+  left: -250px;
   border: 1px solid #d6d6d6;
   color: #d6d6d6;
   background: #fff;
@@ -3576,16 +3515,15 @@ hr {
     top: -22%;
   }
 }
-
 .gallery-carousel-4a button.slick-arrow {
   position: absolute;
   padding: 0;
   z-index: 2;
   cursor: pointer;
   top: 27%;
-  left: -330px;
-  border: 1px solid #d6d6d6;
-  color: #d6d6d6;
+  left: -4%;
+  border: 2px solid #65c9bb;
+  color: #65c9bb;
   background: #fff;
   width: 65px;
   height: 65px;
@@ -3618,11 +3556,11 @@ hr {
 }
 .gallery-carousel-4a button.slick-arrow:hover {
   color: #fff;
-  border: 1px solid #f15b43;
-  background: #f15b43;
+  border: 1px solid #65c9bb;
+  background: #65c9bb;
 }
 .gallery-carousel-4a button.slick-next {
-  left: calc(100%);
+  left: calc(99%);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .gallery-carousel-4a button.slick-next {

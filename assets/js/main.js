@@ -162,7 +162,7 @@ $('.single-carousel').slick({
   arrows: false,
   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [
     {
@@ -187,65 +187,6 @@ $('.single-carousel').slick({
       breakpoint: 992,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-        arrows: true
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-      }
-    },
-  ]
-});
-
- // Blog Active
- $('.gallery-carousel-5').slick({
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  speed: 400,
-  arrows: true,
-  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
-  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1400,
-      settings: {
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
