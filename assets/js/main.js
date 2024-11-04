@@ -49,7 +49,7 @@
       });
       BasicSlider.slick({
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1500,
         dots: true,
         fade: true,
         arrows: false, 
@@ -151,6 +151,7 @@
 
   //
 $('.single-carousel').slick({
+  lazyLoad: 'ondemand',
   fade: true,
   cssEase: 'linear',
   dots: false,

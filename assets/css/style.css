@@ -1439,8 +1439,8 @@ hr {
 }
 .section-padding {
   margin-top:20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .single-footer-caption{
@@ -1448,8 +1448,8 @@ hr {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .single-footer-caption{
     margin-bottom: 30px;
@@ -1457,8 +1457,8 @@ hr {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .single-footer-caption{
     margin-bottom: 30px;
@@ -1466,8 +1466,8 @@ hr {
 }
 @media (max-width: 575px) {
   .section-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .single-footer-caption{
     margin-bottom: 20px;
