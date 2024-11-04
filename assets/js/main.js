@@ -271,6 +271,7 @@ $('.single-carousel').slick({
 });
 
 $('.gallery-carousel-4a').slick({
+  lazyLoad: 'ondemand',
   dots: false,
   infinite: true,
   autoplay: true,
