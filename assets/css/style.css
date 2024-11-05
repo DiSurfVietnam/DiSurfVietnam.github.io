@@ -1807,9 +1807,22 @@ hr {
   background-position: center center;
   background-attachment: fixed;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-img-bg {
+    background-attachment: fixed;
+    background-size: auto;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section-img-bg {
+    background-attachment: fixed;
+    background-size: auto;
+  }
+}
 @media only screen and (max-width: 575px){
   .section-img-bg {
-    background-attachment: local;
+    background-attachment: fixed;
+    background-size: auto;
   }
 }
 .section-img-bg2 {
@@ -2750,24 +2763,31 @@ hr {
   .slider-area .hero-caption {
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .hero-caption {
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-area .hero-caption {
     padding-top: 50px;
     padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media (max-width: 575px) {
   .slider-area .hero-caption {
     padding-top: 70px;
     padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .slider-area .hero-caption span {
