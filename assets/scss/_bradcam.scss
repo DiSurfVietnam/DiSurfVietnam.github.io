@@ -79,7 +79,8 @@
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         -webkit-user-select: none;
-        -moz-user-select: none;
+        user-select: none;
+-webkit-user-select: none;
         -ms-user-select: none;
         user-select: none;
         white-space: nowrap;

@@ -16,7 +16,8 @@
 	line-height: 0;
 
 	cursor: pointer;
-	-moz-user-select: none;
+	user-select: none;
+-webkit-user-select: none;
 	transition: color 0.4s linear;
 	position: relative;
 	z-index: 1;
@@ -80,7 +81,8 @@
 	
 	height: 65px;
 
-	-moz-user-select: none;
+	user-select: none;
+-webkit-user-select: none;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 17px;
@@ -301,7 +303,8 @@
 
 	line-height: 0;
 	cursor: pointer;
-	-moz-user-select: none;
+	user-select: none;
+-webkit-user-select: none;
 	transition: color 0.4s linear;
 	position: relative;
 	z-index: 1;
@@ -371,7 +374,8 @@
     cursor: pointer;
     display: inline-block;
     line-height: 0;
-    -moz-user-select: none;
+    user-select: none;
+-webkit-user-select: none;
     cursor: pointer;
     transition: color 0.4s linear;
     position: relative;
