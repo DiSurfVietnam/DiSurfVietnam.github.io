@@ -1290,7 +1290,7 @@ hr {
     height: 60px;
     width: 60px;
     right: 100px;
-    bottom: 10px;
+    bottom: 20px;
     position: fixed;
     color: #fff;
     font-size: 20px;
@@ -6238,8 +6238,8 @@ del {
 
 .float {
     position: fixed;
-    bottom: 10px;
-    right: 24px;
+    bottom: 20px;
+    right: 20px;
     text-align: center;
     z-index: 1000;
 }
@@ -6302,6 +6302,8 @@ del {
 
 .float .p-phone a {
     position: absolute;
+    top: 0px;
+    right: -60px;
     opacity: 0;
     background: #fff;
     color: #333;
@@ -6309,61 +6311,17 @@ del {
     width: 60px;
     line-height: 40px;
     transition: transform 0.4s ease;
-    right: 80px;
     transform: translateY(50px);
     transition: all 0.4s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    right: -60px;
     transition-delay: 0.3s;
-    transform-origin: right center 0;
+    transform-origin: center center 0;
 }
 
 .float.open .p-phone a {
     position: absolute;
-    top: 0;
-    opacity: 1;
-    background: #fff;
-    color: #333;
-    height: 60px;
-    width: 60px;
-    line-height: 40px;
-    transition: transform 0.4s ease;
+    top: 0px;
     right: -60px;
-    transform: translateY(50px);
-    transition: all 0.4s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    transition-delay: 0.2s;
-}
-
-.float.open .p-phone a:hover {
-    background: #25d366;
-    color: white;
-}
-
-.float .p-facebook a {
-    position: absolute;
-    opacity: 0;
-    background: #fff;
-    color: #333;
-    height: 60px;
-    width: 60px;
-    line-height: 40px;
-    transition: transform 0.4s ease;
-    right: 80px;
-    transform: translateY(50px);
-    transition: all 0.4s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    right: -50px;
-    transition-delay: 0.3s;
-    transform-origin: right center 0;
-}
-
-.float.open .p-facebook a {
-    position: absolute;
-    top: 0;
     opacity: 1;
     background: #fff;
     color: #333;
@@ -6371,7 +6329,6 @@ del {
     width: 60px;
     line-height: 40px;
     transition: transform 0.4s ease;
-    right: 80px;
     transform: translateY(50px);
     transition: all 0.4s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -6384,8 +6341,15 @@ del {
     color: white;
 }
 
-.float .p-instagram a {
+.float.open .p-phone a:hover {
+    background: #25d366;
+    color: white;
+}
+
+.float .p-facebook a {
     position: absolute;
+    top: -140px;
+    right: -60px;
     opacity: 0;
     background: #fff;
     color: #333;
@@ -6393,19 +6357,17 @@ del {
     width: 60px;
     line-height: 40px;
     transition: transform 0.4s ease;
-    right: 150px;
     transform: translateY(50px);
     transition: all 0.4s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    right: -50px;
     transition-delay: 0.3s;
-    transform-origin: right center 0;
+    transform-origin: center center 0;
 }
 
-.float.open .p-instagram a {
+.float.open .p-facebook a {
     position: absolute;
-    top: 0;
+    top: -140px;
+    right: -60px;
     opacity: 1;
     background: #fff;
     color: #333;
@@ -6413,7 +6375,46 @@ del {
     width: 60px;
     line-height: 40px;
     transition: transform 0.4s ease;
-    right: 150px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transition-delay: 0.2s;
+}
+
+.float.open .p-facebook a:hover {
+    background: #1877f2;
+    color: white;
+}
+.float .p-instagram a {
+    position: absolute;
+    top: -210px;
+    right: -60px;
+    opacity: 0;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    transition-delay: 0.3s;
+    transform-origin: center center 0;
+}
+
+.float.open .p-instagram a {
+    position: absolute;
+    top: -210px;
+    right: -60px;
+    opacity: 1;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
     transform: translateY(50px);
     transition: all 0.4s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -6422,12 +6423,14 @@ del {
 }
 
 .float.open .p-instagram a:hover {
-    background: #e1306c;
+    background: #1877f2;
     color: white;
 }
 
 .float .p-email a {
     position: absolute;
+    top: -70px;
+    right: -60px;
     opacity: 0;
     background: #fff;
     color: #333;
@@ -6435,19 +6438,17 @@ del {
     width: 60px;
     line-height: 40px;
     transition: transform 0.4s ease;
-    right: 10px;
     transform: translateY(50px);
     transition: all 0.4s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    right: -50px;
     transition-delay: 0.3s;
-    transform-origin: right center 0;
+    transform-origin: center center 0;
 }
 
 .float.open .p-email a {
     position: absolute;
-    top: 0;
+    top: -70px;
+    right: -60px;
     opacity: 1;
     background: #fff;
     color: #333;
@@ -6455,7 +6456,6 @@ del {
     width: 60px;
     line-height: 40px;
     transition: transform 0.4s ease;
-    right: 10px;
     transform: translateY(50px);
     transition: all 0.4s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
