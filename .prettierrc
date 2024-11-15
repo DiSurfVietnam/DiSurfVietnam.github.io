@@ -1,32 +1,30 @@
 {
-  
-    "semi": true, 
-  "singleQuote": true, 
-  "tabWidth": 4, 
-  "useTabs": false, 
-  "htmlWhitespaceSensitivity": "ignore", 
-  "proseWrap": "never", 
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 4,
+  "useTabs": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "proseWrap": "never",
   "printWidth": 120,
-    "cssEnable": ["css", "scss"],
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "html"
-        }
-      },
-      {
-        "files": "*.css",
-        "options": {
-          "parser": "css"
-        }
-      },
-      {
-        "files": "*.scss",
-        "options": {
-          "parser": "scss"
-        }
+  "cssEnable": ["css", "scss"],
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html"
       }
-    ]
-  }
-  
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css"
+      }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "parser": "scss"
+      }
+    }
+  ]
+}

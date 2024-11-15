@@ -36,6 +36,9 @@
 .secondary-color {
     color: #dc3e25;
 }
+.secondary-color:hover {
+    color: #0fa3b1;
+}
 [data-overlay] {
     position: relative;
     background-size: cover;
@@ -1282,11 +1285,12 @@ hr {
 }
 #scrollUp,
 #back-top {
+    display: none;
     background: #0fa3b1;
-    height: 50px;
-    width: 50px;
-    right: 31px;
-    bottom: 18px;
+    height: 60px;
+    width: 60px;
+    right: 100px;
+    bottom: 10px;
     position: fixed;
     color: #fff;
     font-size: 20px;
@@ -1294,7 +1298,7 @@ hr {
     border-radius: 50%;
     line-height: 48px;
     border: 2px solid transparent;
-    box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+    box-shadow: 1px 1px 5px 3px rgba(9, 111, 118, 0.5);
     z-index: 2;
 }
 @media (max-width: 575px) {
@@ -1306,7 +1310,7 @@ hr {
 #scrollUp a i,
 #back-top a i {
     display: block;
-    line-height: 50px;
+    line-height: 55px;
 }
 #scrollUp:hover {
     color: #fff;
@@ -2451,7 +2455,7 @@ hr {
 }
 @media (min-width: 1400px) and (max-width: 1600px) {
     .header-area .header-bottom {
-        padding: 0px 30px;
+        padding: 0px 0px;
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2478,7 +2482,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.25);
 }
 .header-area .main-header .main-menu {
-    margin-left: 60px;
+    margin-left: 30px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .header-area .main-header .main-menu {
@@ -3231,10 +3235,16 @@ hr {
     background: none;
 }
 .our-services-area .single-services1 .services-ion {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
+    padding-top: 35px;
+    margin-top: 35px;
 }
+
 .services-cap {
-    padding: 15px;
+    padding: 25px;
+}
+.single-services1 {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .our-services-area .single-services1 .services-cap h5 a {
     color: #fff;
@@ -6155,6 +6165,7 @@ del {
 .content h2:nth-child(2) {
     color: #fff;
     animation: animate 4s ease-in-out infinite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Apply shadow to the outline */
 }
 
 @keyframes animate {
@@ -6221,4 +6232,254 @@ del {
     background-size: cover;
     pointer-events: none; /* Ensures the wave doesn't interfere with user actions */
     z-index: 1; /* Ensure this is lower than footer content */
+}
+
+/* Begin float */
+
+.float {
+    position: fixed;
+    bottom: 10px;
+    right: 24px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.float .trigger {
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+    background: #e24e18;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+    animation: 1.5s linear 0s infinite normal pulse;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.float .trigger:hover {
+    transform: scale(1.1);
+}
+
+.float.open .trigger .fa::before {
+    content: '\f00d';
+}
+
+.float .trigger .fa::after {
+    transition: ease-in-out 1s;
+}
+
+.fab.open .trigger i {
+    transition: all 0.4s ease;
+    transform: translateY(5px) rotate(360deg);
+}
+
+.float i {
+    font-size: 28px;
+    line-height: 58px;
+}
+
+.float .actions {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.float.open .actions {
+    opacity: 1;
+}
+
+.float.open .p-info {
+    opacity: 1;
+    position: absolute;
+    transition: transform 0.4s ease;
+    transition: all 0.4s ease;
+    transform: translateY(-186px);
+    right: 60px;
+    width: 40px;
+    height: 40px;
+}
+
+.float .p-phone a {
+    position: absolute;
+    opacity: 0;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: 80px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    right: -60px;
+    transition-delay: 0.3s;
+    transform-origin: right center 0;
+}
+
+.float.open .p-phone a {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: -60px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transition-delay: 0.2s;
+}
+
+.float.open .p-phone a:hover {
+    background: #25d366;
+    color: white;
+}
+
+.float .p-facebook a {
+    position: absolute;
+    opacity: 0;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: 80px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    right: -50px;
+    transition-delay: 0.3s;
+    transform-origin: right center 0;
+}
+
+.float.open .p-facebook a {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: 80px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transition-delay: 0.2s;
+}
+
+.float.open .p-facebook a:hover {
+    background: #1877f2;
+    color: white;
+}
+
+.float .p-instagram a {
+    position: absolute;
+    opacity: 0;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: 150px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    right: -50px;
+    transition-delay: 0.3s;
+    transform-origin: right center 0;
+}
+
+.float.open .p-instagram a {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: 150px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transition-delay: 0.2s;
+}
+
+.float.open .p-instagram a:hover {
+    background: #e1306c;
+    color: white;
+}
+
+.float .p-email a {
+    position: absolute;
+    opacity: 0;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: 10px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    right: -50px;
+    transition-delay: 0.3s;
+    transform-origin: right center 0;
+}
+
+.float.open .p-email a {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    transition: transform 0.4s ease;
+    right: 10px;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transition-delay: 0.2s;
+}
+
+.float.open .p-email a:hover {
+    background: #ffba0a;
+    color: white;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 1px 0px 3px #ab1a1a30, 0px 0px 0px 0px #ef242450;
+    }
+    30% {
+        box-shadow: 0px 1px 0px 3px #ab1a1a30, 0px 0px 0px 5px #ef242450;
+    }
+    70% {
+        box-shadow: 0px 1px 0px 3px #ab1a1a30, 0px 0px 0px 15px #ef242410;
+    }
+    100% {
+        box-shadow: 1px 1px 2px 1px #ab1a1a30, 0px 0px 0px 20px transparent;
+    }
 }

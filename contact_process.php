@@ -18,7 +18,9 @@
     $logo = 'img/logo.svg';
     $link = '#';
 
-	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
+	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>
+    <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-HZHXCZF1WG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- Your website content -->
+";
 	$body .= "<table style='width: 100%;'>";
 	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
 	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";

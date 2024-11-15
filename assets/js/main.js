@@ -377,5 +377,8 @@ $('.gallery-carousel-4a').slick({
       time: 3000
     });
 
+    $('.float').click(function() {
+      $(this).toggleClass('open');
+    });
 
 })(jQuery);
